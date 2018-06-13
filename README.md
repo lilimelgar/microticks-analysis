@@ -25,11 +25,12 @@ We can also choose to output the statistics in a text file (*sample_stats.txt*),
 
 	python microticks-analysis.py -i sample_stats.json -f 1327 -l 1429 -h main -s 1391,1392 > sample_stats.txt
 
-### Output
+## Output
 
-*Statistics*
+### Statistics
 
 The script outputs a list of properties, in a space-separated format.
+
 -**total_num_sessions** (total number of sessions)
 
 -**screen_name num_clicks_incl_duplicates** (number of clicks per screen, also counting repeated clicks without subject changes)
@@ -64,7 +65,7 @@ The script outputs a list of properties, in a space-separated format.
 
 -**ORDER_CLICKS_IN_SESSIONS** (for each session_id, the succession of opened screens)
 
-*Heatmaps*
+### Heatmaps
 
 In a folder with the name of the statistics file in use (e.g. sample_stats/), you'll find a png image with heatmaps for each screen in the application (which has had one or more views). These heatmaps are a visual depiction of the user interactions with each screen of the application (the X,Y values), and are projected on a white background.
 
