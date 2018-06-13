@@ -474,7 +474,7 @@ def main(argv):
 		opts, args = getopt.getopt(argv,"i:f:l:h:s:")
 	except getopt.GetoptError:
 		print 'error in arguments'
-		print 'processStats.py -i <inputfile> -f <first session id> -l <last session id> -h <name of home screen in ximpel app> [-s <comma separated list of session numbers to skip>] [-c categories of screens <comma separated list of screen names>]'
+		print 'processStats.py -i <inputfile> -f <first session id> -l <last session id> -h <name of home screen in ximpel app> [-s <comma separated list of session numbers to skip>]'
 		sys.exit(2)
 	for opt, arg in opts:
 		#print opts
@@ -498,7 +498,7 @@ def main(argv):
 	print '\n'
 	if(INPUT_FILE == '' or FIRST_SESSION == '' or LAST_SESSION == '' or HOME_SCR_NAME == ''):
 		print 'missing argument(s)'
-		print 'processStats.py -i <inputfile> -f <first session id> -l <last session id> -h <name of home screen in ximpel app> [-s <comma separated list of session numbers to skip>] [-c categories of screens <comma separated list of screen names>]'
+		print 'processStats.py -i <inputfile> -f <first session id> -l <last session id> -h <name of home screen in ximpel app> [-s <comma separated list of session numbers to skip>]'
 		sys.exit(2)
 	loadInputFile(INPUT_FILE,FIRST_SESSION,LAST_SESSION,HOME_SCR_NAME,skippedSessionsArr)
 
