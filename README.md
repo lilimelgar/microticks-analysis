@@ -1,4 +1,4 @@
-# Analysis script (Python 2.7) for the microticks package
+# Analysis script (Python 2.7) for the [microticks](https://github.com/scriptotek/microticks) package
 
 Generates csv-like aggregated statistics for data gathered with microticks, as well as heatmaps. Comes with sample data.
 
@@ -51,11 +51,11 @@ The script outputs a list of properties, in a space-separated format.
 
 -**hour cumu_clicks_(incl_duplicates) num_sessions mean_clicks_incl_duplicates** (hour of the day, number of clicks (including duplicate clicks), number of unique sessions, mean number of clicks (including duplicate clicks)
 
--**screen_type clicks_(no_duplicates)** (number of clicks per screen type. The use of this statistic depends on the naming of the subjects - for instance, in sample_stats.json the format is *screen-type:content*)
+-**screen_type clicks_(no_duplicates)** (number of clicks per screen type. The use of this statistic depends on the naming of the subjects - for instance, in *sample_stats.json* the format is *screen-type:content*)
 
 -**day number_of_sessions** (number of unique sessions per day of the week)
 
--**resource total_num_page_changes total_num_clicks mean_viewed_pages_(2_per_page_change)** (ebook use, specifying the ebook, the number of page changes, the total number of clicks (unfiltered), and the mean number of viewed pages (2 pages are visible on one screen). The use of this statistic depends on the PDFviewer plugin for XIMPEL)
+-**resource total_num_page_changes total_num_clicks mean_viewed_pages_(2_per_page_change)** (e-book use, specifying the ebook, the number of page changes, the total number of clicks (unfiltered), and the mean number of viewed pages (2 pages are visible on one screen). The use of this statistic depends on the PDFviewer plugin for XIMPEL)
 
 -**session num_page_changes num_viewed_pages** (number of page changes and viewed pages per session_id)
 
@@ -67,7 +67,7 @@ The script outputs a list of properties, in a space-separated format.
 
 ### Heatmaps
 
-In a folder with the name of the statistics file in use (e.g. sample_stats/), you'll find a png image with heatmaps for each screen in the application (which has had one or more views). These heatmaps are a visual depiction of the user interactions with each screen of the application (the X,Y values), and are projected on a white background.
+In a folder with the name of the statistics file in use (e.g. sample_stats/), you'll find a png images with a heatmap for each screen in the application (which has had one or more views). These heatmaps are a visual depiction of the user interactions with each screen of the application (the [X,Y] values), and are projected on a white background.
 
 ![Resulting heatmap for the main screen of an application](/images/heatmap-main.png "Resulting heatmap for the main screen of an application")
 
